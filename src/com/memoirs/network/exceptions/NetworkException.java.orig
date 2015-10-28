@@ -1,0 +1,15 @@
+package com.memoirs.network.exceptions;
+
+import com.memoirs.network.RequestStatus;
+
+public class NetworkException extends Exception {
+	private RequestStatus status;
+	
+	public NetworkException ( RequestStatus error) {
+		this.status = error;
+	}
+	public RequestStatus getRequestStatus (){
+		return status;
+	}
+
+}

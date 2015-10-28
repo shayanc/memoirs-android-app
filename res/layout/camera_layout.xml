@@ -1,0 +1,59 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="bottom|top"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:id="@+id/camera_preview"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true" >
+
+
+
+    </FrameLayout>
+
+    <!-- <ImageButton
+        android:id="@+id/button_capture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="16dp"
+        centerh=""
+        android:background="@drawable/pic_icon"
+        android:padding="12dip"
+        android:text="Capture"
+        android:textColor="#AA000000" />
+ -->
+         <ImageButton
+            android:id="@+id/button_capture"
+            android:layout_width="128dp"
+            android:layout_height="110dp"
+            android:background="@drawable/pic_icon" 
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/btnKeep"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:background="#ffffffff"
+        android:text="Keep"
+        android:textColor="#AA000000" />
+
+    <Button
+        android:id="@+id/btnDiscard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:background="#ffffffff"
+        android:text="Discard"
+        android:textColor="#AA000000" />
+
+</RelativeLayout>

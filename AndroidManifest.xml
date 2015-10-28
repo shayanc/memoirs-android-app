@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.memoirs.application"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="15"
+        android:targetSdkVersion="18" />
+
+    <!-- CAMERA -->
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <!-- Audio Setup -->
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <!-- Internet conection permissions -->
+    <uses-permission android:name="android.permission.NETWORK" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.memoirs.application.gui.GUI_Menu"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.memoirs.application.gui.GUI_CreateMemory"
+            android:label="Create a Memory"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.memoirs.application.gui.GUI_PreviewMemory"
+            android:label="Display a Memory"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.memoirs.junk.TakePhoto"
+            android:label="Camera Interface"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.memoirs.application.gui.GUI_AudioRecorder"
+            android:label="Audio Recorder"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.memoirs.application.gui.GUI_RecallOptions"
+            android:label="recall memory"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.memoirs.application.gui.GUI_TextInfo"
+            android:label="@string/title_activity_add_text_info"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.memoirs.application.gui.GUI_Camera"
+            android:label="Take photo"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.memoirs.application.gui.WaitingWS"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.memoirs.junk.AudioPlayer"
+            android:label="plays audio"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.memoirs.application.gui.DisplayCreatedMemory"
+            android:label="display created memory"
+            android:screenOrientation="portrait" >
+        </activity>
+    </application>
+
+</manifest>

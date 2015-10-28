@@ -1,0 +1,95 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg_image"
+    android:orientation="vertical" 
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:orientation="vertical" >
+
+        <EditText
+            android:id="@+id/inputTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/lblTitle"
+            android:background="@android:drawable/editbox_dropdown_light_frame"
+            android:ems="10"
+            android:textSize="35sp" />
+
+        <TextView
+            android:id="@+id/lblTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="42dp"
+            android:text=" Enter Title:"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="35dp" />
+
+        <EditText
+            android:id="@+id/inputLocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/lblLocation"
+            android:background="@android:drawable/editbox_dropdown_light_frame"
+            android:ems="10"
+            android:textSize="35dp" />
+
+        <TextView
+            android:id="@+id/lblLocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/inputTitle"
+            android:layout_marginTop="42dp"
+            android:text=" Enter Location:"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="35dp" />
+
+        <TextView
+            android:id="@+id/lblYear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/inputLocation"
+            android:layout_marginTop="42dp"
+            android:text=" Enter Year"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="35dp" />
+
+        <EditText
+            android:id="@+id/inputYear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/lblYear"
+            android:background="@android:drawable/editbox_dropdown_light_frame"
+            android:ems="10"
+            android:inputType="number"
+            
+            android:gravity="start"
+            android:textSize="35dp" />
+
+        <Button
+            android:id="@+id/btnDoneAddindTxtInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/inputYear"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="18dp"
+            android:text="Done"
+            android:padding="20dp"
+            android:textSize="35sp"
+            android:background="@drawable/buttonshape"
+            android:onClick="handleTextInput" />
+
+    </RelativeLayout>
+
+</LinearLayout>
